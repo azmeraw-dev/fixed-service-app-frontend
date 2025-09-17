@@ -1,13 +1,157 @@
 body {
+  font-family: 'Segoe UI', Arial, sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f6f9;
+  color: #333;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header, .footer {
+  background-color: #005b96; 
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
+
+.header h1, .footer p {
+  margin: 0;
+}
+
+.navbar a {
+  margin-left: 1rem;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #ffcc00; 
+}
+
+.navbar a.active {
+  font-weight: bold;
+  border-bottom: 2px solid #ffcc00;
+}
+
+.main {
+  padding: 2rem;
+}
+
+.btn {
+  background-color: #00a651; 
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #008f45;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.table th, .table td {
+  border: 1px solid #e5e5e5;
+  padding: 0.8rem;
+  text-align: left;
+}
+
+.table th {
+  background-color: #005b96;
+  color: white;
+}
+
+.badge {
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.badge-pending {
+  background-color: #ffcc00;
+  color: #333;
+}
+
+.badge-inprogress {
+  background-color: #005b96;
+  color: white;
+}
+
+.badge-completed {
+  background-color: #00a651;
+  color: white;
+}
+
+.card {
+  background: white;
+  padding: 1.2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  margin: 0 0 0.5rem;
+  color: #005b96;
+}
+
+.card p {
+  margin: 0.2rem 0;
+}
+.badge {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.badge-pending {
+  background-color: #ffcc00;
+  color: #333;
+}
+
+.badge-progress {
+  background-color: #005b96; 
+}
+
+.badge-completed {
+  background-color: #00a651; 
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+
