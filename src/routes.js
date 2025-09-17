@@ -9,7 +9,6 @@ import Profile from './pages/Profile';
 import Track from './pages/Track';
 import SalesDashboard from './pages/SalesDashboard';
 import TechnicianDashboard from './pages/TechnicianDashboard';
-import CustomerDashboard from './pages/CustomerDashboard';
 
 // Protected route
 const PrivateRoute = ({ children, role }) => {
@@ -33,33 +32,19 @@ const AppRoutes = () => {
         <Route path="/profile" element={<Profile />} />
         <Route path="/track" element={<Track />} />
 
-        {/* Redirect /dashboard based on role */}
+        {/* Redirect based on role after login */}
         <Route
           path="/dashboard"
           element={
             user ? (
-              user.role === 'technician'
-                ? <Navigate to="/technician" />
-                : user.role === 'sales'
-                ? <Navigate to="/sales" />
-                : <Navigate to="/customer" />
+              user.role === 'technician' ? <Navigate to="/technician" /> : <Navigate to="/sales" />
             ) : (
               <Navigate to="/login" />
             )
           }
         />
 
-        {/* Customer Dashboard */}
-        <Route
-          path="/customer"
-          element={
-            <PrivateRoute role="customer">
-              <CustomerDashboard />
-            </PrivateRoute>
-          }
-        />
-
-        {/* Sales Dashboard */}
+        {/* Sales Dashboard → role must be 'sales' */}
         <Route
           path="/sales"
           element={
@@ -69,7 +54,7 @@ const AppRoutes = () => {
           }
         />
 
-        {/* Technician Dashboard */}
+        {/* Technician Dashboard → role must be 'technician' */}
         <Route
           path="/technician"
           element={
@@ -79,6 +64,7 @@ const AppRoutes = () => {
           }
         />
 
+        {/* Fallback */}
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </Router>
@@ -86,4 +72,3 @@ const AppRoutes = () => {
 };
 
 export default AppRoutes;
-

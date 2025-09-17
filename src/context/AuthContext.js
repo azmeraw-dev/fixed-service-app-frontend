@@ -1,31 +1,35 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext, useState, useEffect } from 'react';
 
+// Create Auth Context
 export const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
 
-  // Temporary login function for testing
-  const login = async (email, password) => {
-    const testUsers = [
-      { email: 'tech@example.com', role: 'technician', name: 'John Technician' },
-      { email: 'customer@example.com', role: 'customer', name: 'Jane Customer' },
-    ];
-
-    const foundUser = testUsers.find(u => u.email === email);
-
-    if (!foundUser) {
-      throw new Error('User not found');
+  // Check if user is already logged in (from localStorage)
+  useEffect(() => {
+    const storedUser = localStorage.getItem('user');
+    if (storedUser) {
+      setUser(JSON.parse(storedUser));
     }
+  }, []);
 
-    console.log('Logging in:', foundUser); // Debug
-    setUser(foundUser);
-    return foundUser;
+  // Login function
+  const login = async (email, password, role) => {
+    // For now we simulate login (no backend yet)
+    const fakeUser = { email, role };
+
+    // Save to state and localStorage
+    setUser(fakeUser);
+    localStorage.setItem('user', JSON.stringify(fakeUser));
+
+    return fakeUser;
   };
 
+  // Logout function
   const logout = () => {
-    console.log('Logging out'); // Debug
     setUser(null);
+    localStorage.removeItem('user');
   };
 
   return (

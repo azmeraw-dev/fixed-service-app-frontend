@@ -1,12 +1,15 @@
+/* General */
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
   margin: 0;
   background-color: #f4f6f9;
   color: #333;
+  line-height: 1.6;
 }
 
+/* Header & Footer */
 .header, .footer {
-  background-color: #005b96; 
+  background: linear-gradient(90deg, #005b96, #00a651);
   color: #fff;
   padding: 1rem 2rem;
   display: flex;
@@ -19,10 +22,12 @@ body {
   margin: 0;
 }
 
+/* Navbar */
 .navbar a {
   margin-left: 1rem;
   color: #fff;
   text-decoration: none;
+  font-weight: 500;
   transition: 0.3s;
 }
 
@@ -35,16 +40,13 @@ body {
   border-bottom: 2px solid #ffcc00;
 }
 
-.main {
-  padding: 2rem;
-}
-
+/* Buttons */
 .btn {
   background-color: #00a651; 
   color: white;
   padding: 0.6rem 1.2rem;
   border: none;
-  border-radius: 6px;
+  border-radius: 25px;
   cursor: pointer;
   font-weight: bold;
   transition: 0.3s;
@@ -54,6 +56,41 @@ body {
   background-color: #008f45;
 }
 
+/* Main layout */
+.main {
+  padding: 2rem;
+}
+
+/* Cards */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card h3 {
+  margin: 0 0 0.5rem;
+  color: #005b96;
+}
+
+.card p {
+  margin: 0.2rem 0;
+}
+
+/* Tables */
 .table {
   width: 100%;
   border-collapse: collapse;
@@ -73,47 +110,10 @@ body {
 .table th {
   background-color: #005b96;
   color: white;
+  font-weight: 600;
 }
 
-.badge {
-  padding: 0.3rem 0.8rem;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  font-weight: bold;
-  display: inline-block;
-}
-
-.badge-pending {
-  background-color: #ffcc00;
-  color: #333;
-}
-
-.badge-inprogress {
-  background-color: #005b96;
-  color: white;
-}
-
-.badge-completed {
-  background-color: #00a651;
-  color: white;
-}
-
-.card {
-  background: white;
-  padding: 1.2rem;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  margin-bottom: 1rem;
-}
-
-.card h3 {
-  margin: 0 0 0.5rem;
-  color: #005b96;
-}
-
-.card p {
-  margin: 0.2rem 0;
-}
+/* Status Badges */
 .badge {
   display: inline-block;
   padding: 0.3rem 0.8rem;
@@ -135,23 +135,3 @@ body {
 .badge-completed {
   background-color: #00a651; 
 }
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-
-.card {
-  background: #fff;
-  border-radius: 12px;
-  padding: 1.5rem;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  transition: transform 0.2s ease;
-}
-
-.card:hover {
-  transform: translateY(-4px);
-}
-
-

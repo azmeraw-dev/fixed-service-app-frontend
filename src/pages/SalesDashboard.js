@@ -8,30 +8,54 @@ const SalesDashboard = () => {
       <Header />
       <main className="main">
         <h1>Sales Dashboard</h1>
+        <p>Manage customer requests and send surveys to technicians.</p>
+
+        {/* Card grid for quick stats */}
+        <div className="card-grid">
+          <div className="card">
+            <h3>Total Requests</h3>
+            <p>120</p>
+          </div>
+          <div className="card">
+            <h3>Pending Surveys</h3>
+            <p>15</p>
+          </div>
+          <div className="card">
+            <h3>Completed Installs</h3>
+            <p>90</p>
+          </div>
+        </div>
+
+        {/* Requests Table */}
         <div className="card">
-          <h3>Recent Requests</h3>
-          <p>Manage customer service orders here.</p>
+          <h3>Customer Requests</h3>
           <table className="table">
             <thead>
               <tr>
                 <th>Request ID</th>
                 <th>Customer</th>
-                <th>Service</th>
                 <th>Status</th>
+                <th>Action</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>101</td>
+                <td>REQ101</td>
                 <td>Abebe Kebede</td>
-                <td>New Line</td>
-                <td><span className="status in-progress">In Progress</span></td>
+                <td><span className="badge badge-pending">Pending</span></td>
+                <td><button className="btn">Assign Survey</button></td>
               </tr>
               <tr>
-                <td>102</td>
-                <td>Selamawit D.</td>
-                <td>Package Upgrade</td>
-                <td><span className="status pending">Pending</span></td>
+                <td>REQ102</td>
+                <td>Hana Tesfaye</td>
+                <td><span className="badge badge-inprogress">In Progress</span></td>
+                <td><button className="btn">Follow Up</button></td>
+              </tr>
+              <tr>
+                <td>REQ103</td>
+                <td>Samuel Alemu</td>
+                <td><span className="badge badge-completed">Completed</span></td>
+                <td><button className="btn">View</button></td>
               </tr>
             </tbody>
           </table>
