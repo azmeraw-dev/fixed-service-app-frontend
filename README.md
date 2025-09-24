@@ -40,13 +40,5 @@ This app allows **customers, technicians, and sales staff** to interact digitall
 - **State Management:** React Context API
 - **Mock Data:** Stored in React state (no backend yet)
 
----
 
-## 🚀 Getting Started
-
-1. Clone the repository:
-
-```bash
-git clone <your-repo-link>
-cd fixed-service-app-frontend
 
