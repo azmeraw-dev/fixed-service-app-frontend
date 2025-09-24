@@ -60,7 +60,7 @@ Password: `password123`
 - ✅ Real MongoDB integration (currently using mock data)
 - ✅ SMS/Email notifications for service status
 - ✅ Integration with Telebirr payment system
-- ✅ Deployment on cloud platforms (AWS / Vercel / Render)
+- ✅ Deployment on cloud platforms 
 - ✅ Advanced analytics for sales and technician performance
 
 
