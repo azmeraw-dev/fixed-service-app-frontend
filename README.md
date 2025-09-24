@@ -1,54 +1,69 @@
-# Ethio Telecom Fixed Service App (Full-Stack)
+# 📡 Ethio Telecom Fixed Service Management System
 
-A **full-stack web application** for simplifying **fixed service delivery** at Ethio Telecom.  
-It connects **customers, technicians, and sales teams** on one digital platform — reducing multiple office visits and making service requests **faster, easier, and transparent**.  
+A **full-stack web application** designed to improve **fixed service delivery** for Ethio Telecom customers.  
+It connects **Customers, Technicians, and Sales Staff** on a single digital platform — making service requests **faster, transparent, and efficient**.  
 
 ---
 
-## 🌐 Features
+## 🚀 Key Features
 
-### 👨‍💼 Customers
-- Register and **submit new service requests** (Fixed Line, Internet, Other).  
-- **Track service requests** in real-time using request ID.  
-- View assigned technician and current status.  
-- Make **online payments** (Telebirr integration planned).  
+### 👤 Customers
+- Submit new service requests (**Fixed Line, Internet, Other**)
+- Track requests in real-time using **Request ID**
+- View all requests with status updates
 
 ### 🔧 Technicians
-- View **assigned customer requests**.  
-- Update request status: **Pending → Assigned → Completed → Activated**.  
-- Confirm service installation.  
+- View **assigned requests**
+- Update service request status (**Assigned → Completed → Activated**)
+- Confirm service completion
 
-### 💼 Sales Team
-- View all customer requests.  
-- **Assign technicians** to new service requests.  
-- Monitor progress and update customers.  
+### 🛒 Sales Staff
+- View all customer requests
+- Assign **technicians** to requests
+- Monitor request progress
 
 ### 🌍 General
-- **Role-based dashboards** (Customer, Technician, Sales).  
-- **Authentication & Authorization** (JWT).  
-- **Responsive UI** styled with Ethio Telecom standards.  
-- **Notification system (future)** via SMS/email.  
+- **Role-based authentication** (Customer, Technician, Sales)
+- **User-friendly dashboards** for each role
+- **Responsive design** with Tailwind CSS
+- End-to-end workflow from **request → assignment → completion → activation**
 
 ---
 
-## ⚙️ Tech Stack
+## ⚙️ Technology Stack
 
-### Frontend
-- **React.js** (UI framework)  
-- **Tailwind CSS** (Styling, Ethio Telecom theme)  
-- **React Router** (Navigation)  
-- **Context API** (State management)  
-
-### Backend
-- **Node.js + Express.js** (Server)  
-- **MongoDB / PostgreSQL** (Database for requests, users, payments)  
-- **JWT Authentication** (Secure login for customers, sales, technicians)  
-
-### Others
-- **Payment Gateway:** Telebirr API (planned)  
-- **Deployment:** Netlify/Vercel (Frontend), AWS/Azure/Heroku (Backend)  
+- **Frontend:** React.js, React Router, Tailwind CSS, Context API  
+- **Backend:** Node.js, Express.js, JWT Authentication  
+- **Database:** MongoDB with Mongoose  
 
 ---
+
+
+## 🔐 Demo Logins (Mock Accounts)
+
+**Customer**  
+Email: `customer@test.com`  
+Password: `password123`
+
+**Technician**  
+Email: `technician@test.com`  
+Password: `password123`
+
+**Sales**  
+Email: `sales@test.com`  
+Password: `password123`
+
+---
+
+## 📌 Future Improvements
+
+- ✅ Real MongoDB integration (currently using mock data)
+- ✅ SMS/Email notifications for service status
+- ✅ Integration with Telebirr payment system
+- ✅ Deployment on cloud platforms (AWS / Vercel / Render)
+- ✅ Advanced analytics for sales and technician performance
+
+
 
 
 
