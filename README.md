@@ -1,44 +1,54 @@
-# Ethio Telecom Fixed Service App (Frontend)
+# Ethio Telecom Fixed Service App (Full-Stack)
 
-A **React-based frontend** for simplifying fixed service delivery for Ethio Telecom customers.  
-This app allows **customers, technicians, and sales staff** to interact digitally, reducing multiple office visits and making service requests faster.
+A **full-stack web application** for simplifying **fixed service delivery** at Ethio Telecom.  
+It connects **customers, technicians, and sales teams** on one digital platform — reducing multiple office visits and making service requests **faster, easier, and transparent**.  
 
 ---
 
 ## 🌐 Features
 
-### Customer
-- Submit a **new service request** (Fixed Line, Internet, Other)
-- View **all requests** with status and assigned technician
-- **Track requests** using request ID
+### 👨‍💼 Customers
+- Register and **submit new service requests** (Fixed Line, Internet, Other).  
+- **Track service requests** in real-time using request ID.  
+- View assigned technician and current status.  
+- Make **online payments** (Telebirr integration planned).  
 
-### Technician
-- View **assigned requests**
-- Update request status: Assigned → Completed → Activated
-- Mock payment confirmation
+### 🔧 Technicians
+- View **assigned customer requests**.  
+- Update request status: **Pending → Assigned → Completed → Activated**.  
+- Confirm service installation.  
 
-### Sales
-- View **all service requests**
-- **Assign technicians** to requests
-- Track progress of requests
+### 💼 Sales Team
+- View all customer requests.  
+- **Assign technicians** to new service requests.  
+- Monitor progress and update customers.  
 
-### General
-- **Role-based navigation** (Customer, Technician, Sales)
-- Dynamic **Navbar & Logout**
-- Responsive design using **Tailwind CSS**
-- Mock data storage using React **Context API**
-
----
+### 🌍 General
+- **Role-based dashboards** (Customer, Technician, Sales).  
+- **Authentication & Authorization** (JWT).  
+- **Responsive UI** styled with Ethio Telecom standards.  
+- **Notification system (future)** via SMS/email.  
 
 ---
 
 ## ⚙️ Tech Stack
 
-- **Frontend:** React.js
-- **Styling:** Tailwind CSS
-- **Routing:** React Router
-- **State Management:** React Context API
-- **Mock Data:** Stored in React state (no backend yet)
+### Frontend
+- **React.js** (UI framework)  
+- **Tailwind CSS** (Styling, Ethio Telecom theme)  
+- **React Router** (Navigation)  
+- **Context API** (State management)  
+
+### Backend
+- **Node.js + Express.js** (Server)  
+- **MongoDB / PostgreSQL** (Database for requests, users, payments)  
+- **JWT Authentication** (Secure login for customers, sales, technicians)  
+
+### Others
+- **Payment Gateway:** Telebirr API (planned)  
+- **Deployment:** Netlify/Vercel (Frontend), AWS/Azure/Heroku (Backend)  
+
+---
 
 
 
