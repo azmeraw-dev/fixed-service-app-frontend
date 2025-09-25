@@ -42,7 +42,7 @@ It connects **Customers, Technicians, and Sales Staff** on a single digital plat
 
 You can view the live frontend demo deployed on Vercel here:  
 
-[🌐 Visit Live Demo](https://your-vercel-app-url.vercel.app)
+[🌐 Visit Live Demo](https://fixed-service-app-frontend.vercel.app)
 
 
 
