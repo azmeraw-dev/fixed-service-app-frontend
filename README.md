@@ -38,6 +38,13 @@ It connects **Customers, Technicians, and Sales Staff** on a single digital plat
 
 ---
 
+## 🔗 Live Demo
+
+You can view the live frontend demo deployed on Vercel here:  
+
+[🌐 Visit Live Demo](https://your-vercel-app-url.vercel.app)
+
+
 
 ## 🔐 Demo Logins (Mock Accounts)
 
