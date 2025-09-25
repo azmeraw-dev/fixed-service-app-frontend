@@ -34,7 +34,7 @@ It connects **Customers, Technicians, and Sales Staff** on a single digital plat
 
 - **Frontend:** React.js, React Router, Tailwind CSS, Context API  
 - **Backend:** Node.js, Express.js, JWT Authentication  
-- **Database:** MongoDB with Mongoose  
+- **Database:** MongoDB,MySQL
 
 ---
 
