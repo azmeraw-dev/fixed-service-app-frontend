@@ -5,6 +5,26 @@ It connects **Customers, Technicians, and Sales Staff** on a single digital plat
 
 ---
 
+## 🔗 Live Demo
+
+You can view the live frontend demo deployed on Vercel here:  
+
+[🌐 Visit Live Demo](https://fixed-service-app-frontend.vercel.app) 
+
+---
+
+## 🔐 Demo Logins (Mock Accounts)
+
+**Technician**  
+Email: `technician@test.com`  
+Password: `password123`
+
+**Sales**  
+Email: `sales@test.com`  
+Password: `password123`
+
+---
+
 ## 🚀 Key Features
 
 ### 👤 Customers
@@ -34,27 +54,9 @@ It connects **Customers, Technicians, and Sales Staff** on a single digital plat
 
 - **Frontend:** React.js, React Router, Tailwind CSS, Context API  
 - **Backend:** Node.js, Express.js, JWT Authentication  
-- **Database:** MongoDB,MySQL
-
----
-
-## 🔗 Live Demo
-
-You can view the live frontend demo deployed on Vercel here:  
-
-[🌐 Visit Live Demo](https://fixed-service-app-frontend.vercel.app)
-
-
+- **Database:** MongoDB/MySQL
 
 ## 🔐 Demo Logins (Mock Accounts)
-
-**Technician**  
-Email: `technician@test.com`  
-Password: `password123`
-
-**Sales**  
-Email: `sales@test.com`  
-Password: `password123`
 
 ---
 
