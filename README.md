@@ -48,10 +48,6 @@ You can view the live frontend demo deployed on Vercel here:
 
 ## 🔐 Demo Logins (Mock Accounts)
 
-**Customer**  
-Email: `customer@test.com`  
-Password: `password123`
-
 **Technician**  
 Email: `technician@test.com`  
 Password: `password123`
