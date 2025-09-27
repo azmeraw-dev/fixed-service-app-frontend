@@ -13,7 +13,6 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      // Pass role along with email and password
       const user = await login(email, password, role);
 
       if (user) {
