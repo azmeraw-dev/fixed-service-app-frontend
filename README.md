@@ -56,8 +56,6 @@ Password: `password123`
 - **Backend:** Node.js, Express.js, JWT Authentication  
 - **Database:** MongoDB/MySQL
 
-## 🔐 Demo Logins (Mock Accounts)
-
 ---
 
 ## 📌 Future Improvements
