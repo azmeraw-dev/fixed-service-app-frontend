@@ -1,7 +1,7 @@
 # 📡 Ethio Telecom Fixed Service Management System
 
 A **full-stack web application**(in progress)  designed to improve **fixed service delivery** for Ethio Telecom customers.  
-It connects **Customers, Technicians, and Sales Staff** on a single digital platform —reducing multiple office visits, making service requests **faster, transparent, and efficient**.  
+It connects **Customers, Technicians, and Sales Staff** on a single digital platform reducing multiple office visits, making service requests **faster, transparent, and efficient**.  
 
 ---
 
